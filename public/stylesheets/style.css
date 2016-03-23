@@ -1,0 +1,55 @@
+html { 
+	height: 100%;
+}
+
+body {
+ 	font-family: 'Roboto', sans-serif;
+ 	font-weight: 400;
+	min-height: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.divBody{
+	height:100vh;
+	width:100vw;
+	color: white;
+}
+
+.clickScroller{
+	color: rgba(255,255,255,.5);
+
+}.clickScroller:hover{
+	color: rgba(255,255,255,1);
+}
+
+#customIcon{
+	height: 200px;
+	width: 200px;
+	line-height: 200px;
+	background-color: teal;
+	text-align: center;
+    font-size: 80px;
+
+}
+
+.circleBase{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+	margin:auto;
+}
+
+.circleBase > .hero-content {
+	color: rgba(255,255,255,0);
+
+}
+
+.circleBase:hover > .hero-content:hover {
+    color: white;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    cursor: pointer;
+}
