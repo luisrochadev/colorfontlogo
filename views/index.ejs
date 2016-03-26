@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app=cfl>
 	<head>
   <% include partials/head %>
 	</head>
-	<body>
+	<body ng-controller="ColorController">
 
     <% include partials/welcome %>
+    <% include partials/brand %>
     <% include partials/color %>
     <% include partials/font %>
     <% include partials/logo %>
     <% include partials/product %>
+    <% include partials/custom %>
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
   <script type="text/javascript" src="javascripts/init.js"></script>
-
-  </body>
-	</body>
+  <script type="text/javascript" src="javascripts/angular.js"></script>
+  <script src="javascripts/jscolor.min.js"></script>
+</body>
 </html>

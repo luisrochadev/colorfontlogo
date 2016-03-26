@@ -1,13 +1,31 @@
-<section id="productBlock" class="hero is-fullheight" style="font-family: {{chosenFontFamily}}">
-<header class="header" style="background-color:{{chosenPrimary}}">
-  <div class="container"  >
+<section class="hero is-fullheight is-dark">
+  <div class="hero-content">
+    <div class="container">
+      <h1 class="title">
+        Download your stuff 
+      </h1>
+
+
+<textarea class="textarea">
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset="utf-8">
+  <title>{{ brandName }}</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.16/css/bulma.min.css">
+ <link href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Raleway|Ubuntu|Slabo+27px|Roboto+Slab|Rokkitt|Droid+Serif' rel='stylesheet' type='text/css'>
+</head>
+<body style="font-family: {{chosenFontFamily}}">
+
+  <header class="header" style="background-color:{{chosenPrimary}}">
+  <div class="container">
     <!-- Left side -->
     <div class="header-left">
       <a class="header-item" href="#"style="color:white;">
          <i class="fa {{ chosenIcon }}" style="color: {{iconColor}};"></i> &nbsp;{{ brandName }}
       </a>
-    </div>
-
+    </div>  
     <!-- Right side -->
     <div class="header-right header-menu">
       <span class="header-item" >
@@ -19,18 +37,19 @@
     </div>
   </div>
 </header>
-<section class="hero">
-  <div class="hero-content">
-    <div class="container">
-      <div class="title" >
-        {{ brandName }}
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="container">
+        <div class="title" >
+          {{ brandName }}
+        </div>
+        <h2 class="subtitle">
+          Page subtitle
+        </h2>
       </div>
-      <h2 class="subtitle">
-        Page subtitle
-      </h2>
     </div>
-  </div>
-</section>
+  </section>
 
   <section class="section">
     <div class="container">
@@ -42,8 +61,8 @@
       </div>
     </div>
   </section>
-
-<footer class="footer" style="background-color:{{chosenPrimary}}">
+  
+  <footer class="footer" style="background-color:{{chosenPrimary}}">
   <div class="container">
     <div class="content is-centered">
       <p style="color:white;">
@@ -63,7 +82,15 @@
     </div>
   </div>
 </footer>
-
-
-
+</body>
+</html>
+</textarea>
+<br>
+<br>
+<a class="button is-medium">Click to copy</a>
+    </div>  
+    </div>
+     
+      
+    
 </section>

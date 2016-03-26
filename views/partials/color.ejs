@@ -1,71 +1,32 @@
-<section id="colorBlock" class="hero is-fullheight">
+<section id="colorBlock" class="hero is-fullheight" >
   <h1 class="title" style="padding-top: 15px;">
-    Color
+    {{ brandName }}'s Color
   </h1>
   <h2 class="subtitle">
     Colors are used to are used to....
   </h2>  
 
-<div class="hero-content">  
+  <h2 style="color:{{chosenPrimary}}; font-size: 18px;">Primary color: {{chosenName}}</h2>
+
+  <h2 style="color:{{chosenComplimentary}};font-size: 18px"> Complimentary color: {{complimentaryName}}</h2> 
+
+<div class="hero-content" > 
+<h2 class="subtitle" style="font-size: 20px; color: {{textColor}}">
+    {{ colorInfo }}
+  </h2>   
 <div class="container is-fluid">
+  
 <div class="columns">
+
+  <div class="column" ng-repeat="color in colorPallate">
+    <div class="circleBase" ng-mouseenter="$parent.colorInfo = color.info" ng-click="$parent.chosenPrimary = color.color; $parent.chosenName = color.name; $parent.complimentaryName = color.compName; $parent.chosenComplimentary = color.compColor" style="background:{{color.color}};" >
+    <p class="hero-content" > {{color.name}}</p>
+      </div>    
+  </div>
     
-    <div class="column">
-      <div class="circleBase" style="background: #ed6c63;">
-      <p class="hero-content"> red </p>
-      </div>
-    </div>
-
-    <div class="column is-text-centered ">
-      <div class="circleBase" style="background: #f68b39;">
-        <p class="hero-content"> orange </p>
-      </div>
-    </div>
-
-    <div class="column">
-      <div class="circleBase" style="background: #fce473;">
-        <p class="hero-content"> yellow </p>
-      </div>
-    </div>
-
-    <div class="column">
-      <div class="circleBase" style="background: #97cd76;">
-        <p class="hero-content"> green </p>
-      </div>
-    </div>
-
-    <div class="column">
-      <div class="circleBase" style="background: #42afe3;">
-        <p class="hero-content"> blue </p>
-      </div>
-    </div>
-
-    <div class="column">
-      <div class="circleBase" style="background: #847bb9;">
-        <p class="hero-content"> purple </p>
-      </div>
-    </div>
-
-    <div class="column">
-      <div class="circleBase" style="background: #222324;">
-        <p class="hero-content"> black </p>
-      </div>
-    </div>
-
-    <div class="column">
-      <div class="circleBase" style="background: #aeb1b5;">
-        <p class="hero-content"> gray </p>
-      </div>
-    </div>
-
-    <div class="column">
-      <div class="circleBase" style="background: #f5f7fa;">
-        <p class="hero-content"> white </p>
-      </div>
-    </div>
 
 </div>      
 </div>
 </div>
-  <i class="fa fa-chevron-down fa-5x clickScroller"></i>
+  <i id="colorScroll" style="margin-bottom: 15px;"class="fa fa-chevron-down fa-5x whiteScroller"></i>
 </section>

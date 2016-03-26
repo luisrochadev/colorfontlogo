@@ -1,25 +1,30 @@
-<section class="hero is-warning is-fullheight">
+<section id="fontBlock" class="hero is-fullheight">
+  <h1 class="title" style="padding-top: 15px;">
+    {{ brandName }}'s Font
+  </h1>
+  <h2 class="subtitle">
+      Font is used to communicate...
+  </h2>  
+
+	<h2 style="font-size: 18px;">Your font: {{chosenFont}}</h2>
+
   <div class="hero-content">
-    <div class="container">
-      <h1 class="title">
-        Font 
-      </h1>
-      <h2 class="subtitle">
-        Font is used to communicate...
-      </h2>
-    </div>
-  </div>
-  <i class="fa fa-chevron-down fa-5x clickScroller"></i>
+	<div class="columns">
 
-  <i class="fa fa-question-circle fa-5x is-text-right learnMore"></i>
+		<div class="column" ng-repeat="font in fontBook | filter: sansFilter">
+			<p class="fontItems" style="font-family: {{font.style}}" ng-click="$parent.chosenFontFamily = font.style; $parent.chosenFont = font.name;"> {{font.name}}</p>
+		</div>
+
+	</div>
+
+	<div class="columns">
+
+		<div class="column" ng-repeat="font in fontBook | filter: serifFilter">
+			<p class="fontItems" style="font-family: {{font.style}}" ng-click="$parent.chosenFontFamily = font.style; $parent.chosenFont = font.name;"> {{font.name}}</p>
+		</div>
+
+	</div>
+
+  </div>
+  <i id="fontScroll" style="margin-bottom: 15px;"class="fa fa-chevron-down fa-5x whiteScroller"></i>
 </section>
-
-<div class="modal">
-  <div class="modal-background"></div>
-  <div class="modal-content">
-    <p class="image is-4by3">
-      <img src="http://placehold.it/1280x960">
-    </p>
-  </div>
-  <button class="modal-close"></button>
-</div>

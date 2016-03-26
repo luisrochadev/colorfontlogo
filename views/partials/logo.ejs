@@ -1,16 +1,97 @@
-<section class="hero is-danger is-fullheight">
+<section  id="logoBlock" class="hero is-fullheight">
+    <h1 class="title" style="padding-top: 15px;">
+    {{ brandName }}'s Logo
+  </h1>
+  <h2 class="subtitle">
+  A logo can communicate your brands identity...
+  </h2>  
   <div class="hero-content">
     <div class="container">
-      <h1 class="title">
-        Logo 
-      </h1>
-      <h2 class="subtitle">
-        A logo can communicate your brands identity...
-      </h2>
+    
+      <div>
+      <i id="customIcon" class="fa {{ chosenIcon }}" style="color: {{iconColor}}; background-color:{{chosenPrimary}}; border-radius: {{shape}}"></i>
+      </div>
 
-      <i id="customIcon" class="fa fa-question-circle"></i>
+      <p class="control">
+        <label class="label">Background Color</label>
+        <input class="input jscolor {hash:true}" type="text" ng-model="chosenPrimary" style="border-color:{{chosenPrimary}}; color:{{chosenPrimary}};">
+      </p>      
+
+      <p class="control">
+        <label class="label">Icon Color</label>
+        <input class="input jscolor {hash:true}" type="text" ng-model="iconColor" style="border-color:{{iconColor}};color:{{iconColor}};">
+      </p>
+
+      <p class="control">
+        <label class="radio">
+          <input checked="checked" type="radio" ng-model="shape" value="0%">
+            Square
+        </label>        
+        <label class="radio">
+          <input type="radio" ng-model="shape" value="10%">
+            Rounded Square
+        </label>
+        <label class="radio">
+          <input type="radio" ng-model="shape" value="50%">
+            Circle
+        </label>
+      </p>
+
+      <div class="columns">      
+        <div class="column">    
+          <i class="fa fa-align-justify" ng-click="chosenIcon ='fa-align-justify'"></i><br>  
+
+          <i class="fa fa-ambulance" ng-click="chosenIcon ='fa-ambulance'"></i><br>    
+
+          <i class="fa fa-android" ng-click="chosenIcon ='fa-android'"></i><br>    
+
+          <i class="fa fa-apple" ng-click="chosenIcon ='fa-apple'"></i><br>    
+
+          <i class="fa fa-angle-double-down" ng-click="chosenIcon ='fa-angle-double-down'"></i><br>    
+
+          <i class="fa fa-arrow-left" ng-click="chosenIcon ='fa-arrow-left'"></i><br>    
+
+          <i class="fa fa-arrow-up" ng-click="chosenIcon ='fa-arrow-up'"></i><br>    
+
+          <i class="fa fa-arrows-alt" ng-click="chosenIcon ='fa-arrows-alt'"></i><br>    
+
+          <i class="fa fa-arrows-v" ng-click="chosenIcon ='fa-arrows-v'"></i><br>    
+
+          <i class="fa fa-at" ng-click="chosenIcon ='fa-at'"></i><br>
+      </div>     
+
+        <div class="column">    
+          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
+          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
+          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
+          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
+          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
+          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
+          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
+          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
+          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
+          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>
+      </div>     
+
+        <div class="column">    
+          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
+          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
+          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
+          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
+          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
+          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
+          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
+          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
+          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
+          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>
+      </div>
+    
+
+    
+    </div>
+
 
     </div>
   </div>
-  <i class="fa fa-chevron-down fa-5x clickScroller"></i>
-</section>
+  <i id="logoScroll" style="margin-bottom: 15px;"class="fa fa-chevron-down fa-5x whiteScroller"></i>
+  </section>
