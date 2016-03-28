@@ -1,5 +1,5 @@
 <section id="productBlock" class="hero is-fullheight" style="font-family: {{chosenFontFamily}}">
-<header class="header" style="background-color:{{chosenPrimary}}">
+<header class="header" style="background-color:{{chosenPrimary}}; ">
   <div class="container"  >
     <!-- Left side -->
     <div class="header-left">
@@ -19,14 +19,17 @@
     </div>
   </div>
 </header>
-<section class="hero">
+
+<section class="hero is-large">
   <div class="hero-content">
     <div class="container">
       <div class="title" >
-        {{ brandName }}
+        Welcome to {{ brandName }}
       </div>
       <h2 class="subtitle">
-        Page subtitle
+        <p class="control is-inline" id="productScroll">
+        <a class="button">Use this layout!</a>
+      </p>
       </h2>
     </div>
   </div>
@@ -34,11 +37,35 @@
 
   <section class="section">
     <div class="container">
-      <div class="heading">
-        <h1 class="title">Section</h1>
-        <h2 class="subtitle">
-          A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-        </h2>
+
+      <div class="columns">
+        <div class="column">
+          <i class="fa fa-globe" style="color: {{chosenPrimary}}; font-size: 4em"></i>
+          <h3 class="title">
+          Section
+          </h3>
+          <p class="subtitle">
+            Cornhole yr pop-up chillwave flannel fanny pack YOLO aesthetic organic, portland kale chips master cleanse cray kombucha. Fap retro microdosing 
+          </p>
+        </div>
+        <div class="column">
+          <i class="fa fa-paper-plane" style="color: {{chosenPrimary}}; font-size: 4em"></i>
+          <h3 class="title">
+          Another
+          </h3>    
+          <p class="subtitle">
+          Selvage, messenger bag 8-bit quinoa intelligentsia next level kogi synth. Art party cold-pressed mixtape, hashtag ramps stumptown ennui yuccie squid
+          </p>
+        </div>
+        <div class="column">
+          <i class="fa fa-heart" style="color: {{chosenPrimary}}; font-size: 4em"></i>
+          <h3 class="title">
+          And More
+          </h3>
+          <p class="subtitle">
+          Four dollar toast cliche messenger bag slow-carb, flexitarian drinking vinegar synth umami. Occupy biodiesel craft beer gastropub salvia lo-fi
+          </p>
+        </div>
       </div>
     </div>
   </section>

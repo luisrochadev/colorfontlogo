@@ -1,18 +1,20 @@
-<section id="fontBlock" class="hero is-fullheight">
+<section id="fontBlock" class="hero is-fullheight" style="font-family: {{chosenFontFamily}}">
   <h1 class="title" style="padding-top: 15px;">
     {{ brandName }}'s Font
   </h1>
-  <h2 class="subtitle">
-      Font is used to communicate...
+  <h2 class="subtitle container">
+	Fonts are the medium with which users consume your content. There are two main classifications: serif and sans-serif. Serifs are easier to read. This is because the serif makes individual letters more distinctive and easier to recognize quickly. However, sans-serif fonts read better at small sizes and on computer screens - which typically have a resolution of around 100 dpi. Remember to consider your project, target audience, and message. The best font choices are ones where readers do not notice the font, rather they notice the message.
+
   </h2>  
 
 	<h2 style="font-size: 18px;">Your font: {{chosenFont}}</h2>
+	<h2 style="font-size: 18px;">Font classification: {{chosenFontClass}}</h2>
 
   <div class="hero-content">
 	<div class="columns">
 
 		<div class="column" ng-repeat="font in fontBook | filter: sansFilter">
-			<p class="fontItems" style="font-family: {{font.style}}" ng-click="$parent.chosenFontFamily = font.style; $parent.chosenFont = font.name;"> {{font.name}}</p>
+			<p class="fontItems" style="font-family: {{font.style}}" ng-click="$parent.chosenFontFamily = font.style; $parent.chosenFont = font.name; $parent.chosenURL = font.url; $parent.chosenFontClass = font.type"> {{font.name}}</p>
 		</div>
 
 	</div>
@@ -20,7 +22,7 @@
 	<div class="columns">
 
 		<div class="column" ng-repeat="font in fontBook | filter: serifFilter">
-			<p class="fontItems" style="font-family: {{font.style}}" ng-click="$parent.chosenFontFamily = font.style; $parent.chosenFont = font.name;"> {{font.name}}</p>
+			<p class="fontItems" style="font-family: {{font.style}}" ng-click="$parent.chosenFontFamily = font.style; $parent.chosenFont = font.name; $parent.chosenURL = font.url; $parent.chosenFontClass = font.type"> {{font.name}}</p>
 		</div>
 
 	</div>

@@ -58,40 +58,50 @@ angular.module("cfl", [])
     $scope.fontBook = [
     { name: "Open Sans",
     style: "'Open Sans', sans-serif;",
-    type: "sans-serif"
+    type: "sans-serif",
+    url: "Open+Sans"
     },
     {name: "Roboto",
     style: "'Roboto', sans-serif;",
-    type: "sans-serif"
+    type: "sans-serif",
+    url: "Roboto"
     },
     {name: "Raleway",
     style: "'Raleway', sans-serif;",
-    type: "sans-serif"
+    type: "sans-serif",
+    url: "Raleway"
     },
     {name: "Ubuntu",
     style: "'Ubuntu', sans-serif;",
-    type: "sans-serif"
+    type: "sans-serif",
+    url: "Ubuntu"
     },    
-    { name: "Slabo",
-    style: "'Slabo 27px', serif;",
-    type: "serif"
+    { name: "Merriweather",
+    style: "'Merriweather', serif;",
+    type: "serif",
+    url: "Merriweather"
     },
     {name: "Roboto Slab",
     style: "'Roboto Slab', serif;",
-    type: "serif"
+    type: "serif",
+    url: "Roboto+Slab"
     },
-    {name: "Rokkitt",
-    style: "'Rokkitt', serif;",
-    type: "serif"
+    {name: "Lora",
+    style: "'Lora', serif;",
+    type: "serif",
+    url: "Lora"
     },
     {name: "Droid Serif",
     style: "'Droid Serif', serif;",
-    type: "serif"
+    type: "serif",
+    url: "Droid+Serif"
     },
     ];
 
     $scope.chosenFont = undefined;
     $scope.chosenFontFamily = undefined;
+    $scope.chosenURL = undefined;
+    $scope.chosenFontClass = undefined;
 
     $scope.sansFilter = function (item) { 
       if (item.type === 'sans-serif') {
