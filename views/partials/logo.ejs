@@ -2,8 +2,8 @@
     <h1 class="title" style="padding-top: 15px;">
     {{ brandName }}'s Logo
   </h1>
-  <h2 class="subtitle">
-  A logo can communicate your brands identity...
+  <h2 class="subtitle container">
+  The logo is a core aspect of a company’s commercial brand and its shapes, colors, fonts, and images usually are strikingly different from other logos in the same market niche. The design process must aim to make the logo immediately recognizable and communicative of the company's purpose. 
   </h2>  
   <div class="hero-content">
     <div class="container">
@@ -14,12 +14,12 @@
 
       <p class="control">
         <label class="label">Background Color</label>
-        <input class="input jscolor {hash:true}" type="text" ng-model="chosenPrimary" style="border-color:{{chosenPrimary}}; color:{{chosenPrimary}};">
+        <input class="input jscolor {hash:true}" type="text" ng-model="chosenPrimary" value="{{chosenPrimary}}">
       </p>      
 
       <p class="control">
         <label class="label">Icon Color</label>
-        <input class="input jscolor {hash:true}" type="text" ng-model="iconColor" style="border-color:{{iconColor}};color:{{iconColor}};">
+        <input class="input jscolor {hash:true}" type="text" ng-model="iconColor" value="#fff">
       </p>
 
       <p class="control">
@@ -37,58 +37,123 @@
         </label>
       </p>
 
-      <div class="columns">      
+      <div class="columns iconList">      
         <div class="column">    
-          <i class="fa fa-align-justify" ng-click="chosenIcon ='fa-align-justify'"></i><br>  
+          <i class="fa fa-ambulance" ng-click="chosenIcon ='fa-ambulance'"></i><br>
 
-          <i class="fa fa-ambulance" ng-click="chosenIcon ='fa-ambulance'"></i><br>    
-
-          <i class="fa fa-android" ng-click="chosenIcon ='fa-android'"></i><br>    
-
-          <i class="fa fa-apple" ng-click="chosenIcon ='fa-apple'"></i><br>    
-
-          <i class="fa fa-angle-double-down" ng-click="chosenIcon ='fa-angle-double-down'"></i><br>    
-
-          <i class="fa fa-arrow-left" ng-click="chosenIcon ='fa-arrow-left'"></i><br>    
-
-          <i class="fa fa-arrow-up" ng-click="chosenIcon ='fa-arrow-up'"></i><br>    
-
-          <i class="fa fa-arrows-alt" ng-click="chosenIcon ='fa-arrows-alt'"></i><br>    
-
-          <i class="fa fa-arrows-v" ng-click="chosenIcon ='fa-arrows-v'"></i><br>    
+          <i class="fa fa-arrows-alt" ng-click="chosenIcon ='fa-arrows-alt'"></i><br>
 
           <i class="fa fa-at" ng-click="chosenIcon ='fa-at'"></i><br>
+
+          <i class="fa fa-bed" ng-click="chosenIcon ='fa-bed'"></i><br>
+
+          <i class="fa fa-bicycle" ng-click="chosenIcon ='fa-bicycle'"></i><br>
+
+          <i class="fa fa-camera" ng-click="chosenIcon ='fa-camera'"></i><br>
+
+          <i class="fa fa-stethoscope" ng-click="chosenIcon ='fa-stethoscope'"></i><br>
+
+          <i class="fa fa-code" ng-click="chosenIcon ='fa-code'"></i><br>
+
+          <i class="fa fa-coffee" ng-click="chosenIcon ='fa-coffee'"></i><br>
+
+          <i class="fa fa-connectdevelop" ng-click="chosenIcon ='fa-connectdevelop'"></i><br>
       </div>     
 
         <div class="column">    
-          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
-          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
-          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
-          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
-          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
-          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
-          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
-          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
-          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
-          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>
-      </div>     
+          <i class="fa fa-crosshairs" ng-click="chosenIcon ='fa-crosshairs'"></i><br>
 
-        <div class="column">    
-          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
-          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
-          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
-          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
-          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
-          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
-          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
-          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
-          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>    
-          <i class="fa fa-bluetooth" ng-click="chosenIcon ='fa-bluetooth'"></i><br>
+          <i class="fa fa-cut" ng-click="chosenIcon ='fa-cut'"></i><br>
+
+          <i class="fa fa-exclamation-triangle" ng-click="chosenIcon ='fa-exclamation-triangle'"></i><br>
+
+          <i class="fa fa-futbol-o" ng-click="chosenIcon ='fa-futbol-o'"></i><br>
+
+          <i class="fa fa-graduation-cap" ng-click="chosenIcon ='fa-graduation-cap'"></i><br>
+
+          <i class="fa fa-leaf" ng-click="chosenIcon ='fa-leaf'"></i><br>
+
+          <i class="fa fa-microphone" ng-click="chosenIcon ='fa-microphone'"></i><br>
+
+          <i class="fa fa-pencil" ng-click="chosenIcon ='fa-pencil'"></i><br>
+
+          <i class="fa fa-space-shuttle" ng-click="chosenIcon ='fa-space-shuttle'"></i><br>
+              
+          <i class="fa fa-street-view" ng-click="chosenIcon ='fa-street-view'"></i><br>
+      </div>
+
+      <div class="column">    
+          <i class="fa fa-anchor" ng-click="chosenIcon ='fa-anchor'"></i><br>
+
+          <i class="fa fa-bug" ng-click="chosenIcon ='fa-bug'"></i><br>
+
+          <i class="fa fa-cutlery" ng-click="chosenIcon ='fa-cutlery'"></i><br>
+
+          <i class="fa fa-diamond" ng-click="chosenIcon ='fa-diamond'"></i><br>
+
+          <i class="fa fa-eye" ng-click="chosenIcon ='fa-eye'"></i><br>
+
+          <i class="fa fa-flash" ng-click="chosenIcon ='fa-flash'"></i><br>
+
+          <i class="fa fa-gamepad" ng-click="chosenIcon ='fa-gamepad'"></i><br>
+
+          <i class="fa fa-headphones" ng-click="chosenIcon ='fa-headphones'"></i><br>
+
+          <i class="fa fa-paint-brush" ng-click="chosenIcon ='fa-paint-brush'"></i><br>
+              
+          <i class="fa fa-umbrella" ng-click="chosenIcon ='fa-umbrella'"></i><br>
+      </div>
+
+      <div class="column">    
+          <i class="fa fa-wrench" ng-click="chosenIcon ='fa-wrench'"></i><br>
+
+          <i class="fa fa-birthday-cake" ng-click="chosenIcon ='fa-birthday-cake'"></i><br>
+
+          <i class="fa fa-flask" ng-click="chosenIcon ='fa-flask'"></i><br>
+
+          <i class="fa fa-gavel" ng-click="chosenIcon ='fa-gavel'"></i><br>
+
+          <i class="fa fa-glass" ng-click="chosenIcon ='fa-glass'"></i><br>
+
+          <i class="fa fa-hashtag" ng-click="chosenIcon ='fa-hashtag'"></i><br>
+
+          <i class="fa fa-meh-o" ng-click="chosenIcon ='fa-meh-o'"></i><br>
+
+          <i class="fa fa-money" ng-click="chosenIcon ='fa-money'"></i><br>
+
+          <i class="fa fa-paw" ng-click="chosenIcon ='fa-paw'"></i><br>
+              
+          <i class="fa fa-plug" ng-click="chosenIcon ='fa-plug'"></i><br>
+      </div>
+
+      <div class="column">    
+          <i class="fa fa-ticket" ng-click="chosenIcon ='fa-ticket'"></i><br>
+
+          <i class="fa fa-tint" ng-click="chosenIcon ='fa-tint'"></i><br>
+
+          <i class="fa fa-trophy" ng-click="chosenIcon ='fa-trophy'"></i><br>
+
+          <i class="fa fa-balance-scale" ng-click="chosenIcon ='fa-balance-scale'"></i><br>
+
+          <i class="fa fa-eyedropper" ng-click="chosenIcon ='fa-eyedropper'"></i><br>
+
+          <i class="fa fa-fort-awesome" ng-click="chosenIcon ='fa-fort-awesome'"></i><br>
+
+          <i class="fa fa-moon-o" ng-click="chosenIcon ='fa-moon-o'"></i><br>
+
+          <i class="fa fa-music" ng-click="chosenIcon ='fa-music'"></i><br>
+
+          <i class="fa fa-tree" ng-click="chosenIcon ='fa-tree'"></i><br>
+              
+          <i class="fa fa-usd" ng-click="chosenIcon ='fa-usd'"></i><br>
       </div>
     
 
     
     </div>
+
+<!--     <a id="btnSave" class="button is-medium" data-clipboard-target="customCode">Save as PNG</a> -->
+
 
 
     </div>
