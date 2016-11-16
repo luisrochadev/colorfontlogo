@@ -1,38 +1,38 @@
 angular.module("cfl", [])
  .controller("ColorController", function($scope) {
     $scope.colorPallate = [
-    { name: "pintred",
+    { name: "red",
       color: "#bd081c",
       info: "excitement, youthful, bold",
       compName: "green",
       compColor: "#97cd76"
     },
-    { name: "orangator",
+    { name: "orange",
       color: "#ff6600",
       info: "friendly, cheerful, confident",
       compName: "blue",
       compColor: "#42afe3"
 
     },
-    { name: "bowellow",
+    { name: "yellow",
       color: "#ffcc2f",
       info: "optimism, clarity, warmth",
       compName: "purple",
       compColor: "#847bb9"
     },
-    { name: "imgreen",
+    { name: "green",
       color: "#85bf25",
       info: "peaceful, healthy, growth",
       compName: "red",
       compColor: "#ed6c63"
     },
-    { name: "birdieblue",
+    { name: "blue",
       color: "#55acee",
       info: "trustworthy, dependable, strong",
       compName: "orange",
       compColor: "#f68b39"
     },
-    { name: "yapurple",
+    { name: "purple",
       color: "#410093",
       info: "creative, imaginitive, wise",
       compName: "yellow",
